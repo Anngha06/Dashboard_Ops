@@ -1,5 +1,5 @@
 // src/lib/roles.ts
-export type { Permission, Role } from '@/types'
+export type { Permissions, Role } from '@/types'
 
 export type Area =
   | 'Home' | 'LeadGeneration' | 'ColdCalling' | 'Content' | 'Campaigns'
