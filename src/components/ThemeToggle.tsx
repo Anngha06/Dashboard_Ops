@@ -1,0 +1,2 @@
+import { useTheme } from '@/lib/theme'
+export default function ThemeToggle(){const t=useTheme(s=>s.theme);const toggle=useTheme(s=>s.toggle);return <button className='btn' onClick={toggle}>{t==='light'?'Light':'Dark'}</button>}

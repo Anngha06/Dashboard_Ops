@@ -1,0 +1,1 @@
+import Guard from '@/components/Guard';import Pills from '@/components/Pills';import { useAuth } from '@/lib/auth';export default function Campaigns(){const session=useAuth(s=>s.session)!;const canEdit=['Admin'].includes(session.role);return(<Guard area='Campaigns'><div className='max-w-6xl mx-auto p-6'><Pills tab='campaigns' canEdit={canEdit}/></div></Guard>) }

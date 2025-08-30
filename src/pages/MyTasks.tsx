@@ -1,0 +1,1 @@
+import Guard from '@/components/Guard';import { useAuth } from '@/lib/auth';import Kanban from '@/components/Kanban';export default function MyTasks(){const session=useAuth(s=>s.session)!;return(<Guard area='MyTasks'><div className='max-w-7xl mx-auto p-6'><div className='title mb-3'>My To-Do</div><Kanban tab='tasks' canEdit={true} assignee={session.name}/></div></Guard>)}

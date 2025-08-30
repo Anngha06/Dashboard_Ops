@@ -1,0 +1,1 @@
+import { create } from 'zustand';import type { Role } from '@/types';type Session={name:string;role:Role};export const useAuth=create<{session:Session|null;login:(s:Session)=>void;logout:()=>void}>((set)=>({session:null,login:(s)=>set({session:s}),logout:()=>set({session:null})}))

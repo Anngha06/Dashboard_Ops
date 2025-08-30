@@ -1,0 +1,1 @@
+import Guard from '@/components/Guard';import Pills from '@/components/Pills';import { useAuth } from '@/lib/auth';export default function People(){const session=useAuth(s=>s.session)!;const canEdit=session.role==='Admin';return(<Guard area='People'><div className='max-w-6xl mx-auto p-6'><Pills tab='people' canEdit={canEdit}/></div></Guard>) }

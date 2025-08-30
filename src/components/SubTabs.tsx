@@ -1,0 +1,1 @@
+export default function SubTabs({items,value,onChange}:{items:string[],value:string,onChange:(v:string)=>void}){return(<div className='flex flex-wrap gap-2 mb-4'>{items.map(t=>(<button key={t} className={`badge ${t===value?'border-brand-600 text-brand-700 dark:text-brand-300':''}`} onClick={()=>onChange(t)}>{t}</button>))}</div>)}
